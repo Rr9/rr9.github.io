@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @teamemail.team %>
+</p>
+
+<p>
+  <strong>Emails:</strong>
+  <%= @teamemail.emails %>
+</p>
+
+<p>
+  <strong>Belongs to:</strong>
+  <%= @teamemail.belongs_to %>
+</p>
+
+<%= link_to 'Edit', edit_teamemail_path(@teamemail) %> |
+<%= link_to 'Back', teamemails_path %>

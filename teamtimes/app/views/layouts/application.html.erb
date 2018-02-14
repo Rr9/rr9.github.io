@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TeamTimes</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="user_nav">
+	<% if user_signed_in? =%>
+
+		<div id="title">
+			<%=link_to '<i>Team</i><b>Times</b>'.html_safe, dashboard_index_path, :class=> "title"%>
+		</div>
+		<div id="rest">
+			<%= current_user.email %> |
+			<%= link_to "Edit Profile", edit_user_registration_path %> | 
+			<%= link_to "Sign Out", destroy_user_session_path %> | 
+			Go to <%= link_to "Dashboard", dashboard_index_path%>
+		</div>
+
+	<%else %>
+		<div id="title">
+			<%=link_to '<i>Team</i><b>Times</b>'.html_safe, home_index_path, :class=> "title"%>
+		</div>
+		<div id="rest">
+			<%= link_to "Sign Up", new_user_registration_path %> | <%= link_to "Sign In", new_user_session_path %>
+			| Go to <%= link_to "Dashboard", new_user_session_path%>
+		</div>
+
+	<%end%>
+</div>
+
+<% flash.each do |name, msg| %>
+	<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<%end%>
+
+<% if notice %>
+	<p class="notice"><%= notice %></p>
+<%end%>
+
+<%= yield %>
+
+</body>
+</html>

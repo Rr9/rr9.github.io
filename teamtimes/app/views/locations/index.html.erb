@@ -1,0 +1,40 @@
+<h1>Listing Locations</h1>
+<% if @locations.any? %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locations.each do |location| %>
+      <tr>
+        <td class="display">
+          <%= link_to edit_location_path(location) do%>
+            <%= location.name %>
+          <%end%>
+        </td>
+        <td class="display">
+          <%= link_to edit_location_path(location) do%>
+            <%= location.date.strftime("%a, %b %d at %I:%M%p") %>
+          <%end%>
+        </td>
+        <td><%= link_to 'X', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  <%else %>
+    <p>There are no teams here <br> Use the new teams button to add teams</p>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Location', new_location_path %>
+<br>
+<h3>
+<%= link_to 'Back', teams_path %> | <%= link_to 'Next', schedule_index_path %> 
+</h3>

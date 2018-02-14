@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Teamemails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Emails</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teamemails.each do |teamemail| %>
+      <tr>
+        <td class="display"><%= teamemail.team %></td>
+        <td class="display"><%= teamemail.emails %></td>
+        <td><%= link_to 'Edit', edit_teamemail_path(teamemail) %></td>
+        <td><%= link_to 'X', teamemail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teamemail', new_teamemail_path %>

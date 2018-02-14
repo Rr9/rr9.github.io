@@ -1,0 +1,26 @@
+<%= form_for(@teamemail) do |f| %>
+  <% if @teamemail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teamemail.errors.count, "error") %> prohibited this teamemail from being saved:</h2>
+
+      <ul>
+      <% @teamemail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team %><br>
+    <%= f.text_field :team %>
+  </div>
+  <div class="field">
+    <%= f.label "Emails - use commas(,) to seperate" %><br>
+    <%= f.text_area :emails %>
+  </div>
+  <%= f.hidden_field :belongs_to, :value=> current_user.email %>
+  <div class="actions">
+    <%= f.submit :value => "Store Emails" %>
+  </div>
+<% end %>
