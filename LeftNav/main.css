@@ -1,0 +1,116 @@
+body{
+	margin:0px;
+	padding:0px;
+	background:#FFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-top:20px;
+	}
+
+nav{
+	padding:0px;
+	margin:0px;
+	width:190px;
+	height:200px;
+	font-size:23px;
+	background:#EEEEEF;
+	text-align:left;
+	padding-top:6px;
+	padding-bottom:10px;
+	position:absolute;
+	}
+		
+.sidenav{
+	width:190px;
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+	
+nav a{
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;
+	margin-left:40px;
+	top:5px;
+	position:relative;
+	z-index:1;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+.sidenav span{
+	width:30px;
+	height:40px;
+	position:absolute;
+	z-index:1;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+#proj span{
+	background:#DD0000;
+	}
+	
+#prog span{
+	background:#33CC00;
+	}
+	
+#ps span{
+	background:#09F;
+	}
+	
+#web span{
+	background:#EC7000;
+	}
+	
+#proj:hover span{
+	width:185px;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+#prog:hover span{
+	width:185px;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+
+#ps:hover span{
+	width:185px;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+#web:hover span{
+	width:185px;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s; 
+	}
+	
+
+
+
+#proj:hover a{
+	color:#FFF;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+#prog:hover a{
+	color:#FFF;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+
+#ps:hover a{
+	color:#FFF;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s;
+	}
+	
+#web:hover a{
+	color:#FFF;
+	-webkit-transition:all ease .3s;
+	-webkit-transition-delay: .1s; 
+	}

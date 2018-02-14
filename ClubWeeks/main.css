@@ -1,0 +1,136 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	min-width: 720px;
+	max-width: 1080px;
+}
+
+fieldset{
+	width: 90%;	padding: 20px;
+}
+
+.weeks{
+	background: #ECEFF1;
+	box-shadow: 2px 2px 1px #90A4AE;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right:  15px;
+	border-bottom: thin #999 solid;
+	overflow: hidden;
+}
+
+.weeks>p{
+	display: inline;
+}
+
+.weeks>.options{
+	display: inline;
+	margin: 0px;
+	float: right;
+	position: relative;
+	right: -380px;
+	-webkit-transition: all .5s;
+}
+
+.weeks:hover{
+	box-shadow: 6px 3px 3px #90A4AE;
+	position: relative;
+	top: -3px;
+	left: -3px;
+	-webkit-transition: all .3s;
+}
+
+
+.options>.checkmark{
+	height: 20px;
+	width: 20px;
+	vertical-align: text-top;
+	background:white;
+	display: inline-block;
+	margin-right: 20px;
+	outline: thin #CCC solid;
+}
+
+input[type=range]{
+	-webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 22px;
+	width: 25px;
+	margin-top: -7px;
+	border-radius: 2px;
+	cursor: pointer;
+	background: #78909C;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 10px;
+	cursor: pointer;
+	background: #CFD8DC;
+	border: 1.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #B0BEC5;
+}
+
+fieldset>fieldset{
+	display: inline;
+	width: 42%;
+	min-height: 35px;
+}
+
+.choose{
+	background: #78909C;
+	color: #fff;
+	display: inline;
+	height: auto;
+	width: 30px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left:  10px;
+	margin: 5px;
+	border-radius: 2px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+}
+
+.choose:hover{
+	border-radius: 9px;
+	-webkit-transition: all .1s;
+}
+
+input[type=submit]{
+	background:#78909C;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	border: none;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	box-shadow: 2px 2px 2px;
+	transition:all .3s;
+}
+
+input[type=submit]:hover{
+	background: #607D8B;
+	border-radius: 5px;
+}
+
+#price{
+	background:#ECEFF1;
+	color: #555;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px; 
+	border-radius: 2px;
+}

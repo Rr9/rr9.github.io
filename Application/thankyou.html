@@ -1,0 +1,56 @@
+<head>
+<link rel="stylesheet" href="screen.css" type="text/css" media="Screen">
+<style>
+a{
+	color:#09F;
+	text-decoration:none;
+	-webkit-transition:all ease .3s;
+	}
+
+a:hover{
+	color:#06F;
+	padding:3px;
+	-webkit-transition:all ease .3s;
+	}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>Thank You!</title>
+    <script src="jquery.js"></script>
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <script src="jquery.cookie.js"></script>
+    <script>
+    	$(document).ready(function(){
+			var complete = $.cookie('Vex2015Registration');
+			if(complete!="Compleated"){
+				$.cookie('Vex2015Registration', 'Compleated', { expires: 14 });
+				}
+			else if(complete=="Compleated"){
+				document.getElementById('completetext').innerHTML = "You have already compleated the application once <br> If you need to resubmit for any reason please come and see the executives";
+				}
+			});
+    </script>
+</head>
+<body background="texture.png">
+
+<div id="break" class="myform">
+
+<h1> Warrior Robotix Application</h1>
+
+<img src="frontlogo.png" alt="Logo" id="logo">
+<img src="Back.png" alt="Logo" id="mobileLogo">
+<h2 id="completetext">Thank You for applying, your application will be processed soon</h2><br>
+<h2>Meanwhile visit us on <a href="https://www.facebook.com/4659Robotics">Facebook</a></h2>
+<h2>Email us at <a href="mailto:team4659@gmail.com">Team4659@gmail.com</a></h2>
+<div class="fb-like" data-href="http://www.facebook.com/4659Robotics" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+</div> <!-- end of form class -->
+
+</body>
+</html>

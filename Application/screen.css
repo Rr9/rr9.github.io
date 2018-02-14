@@ -1,0 +1,233 @@
+body{
+	background:url("texture.png")
+	}
+
+#submit{
+	font-size:20pt;
+	padding:5px;
+	background:#FFF; 
+	border:#999 medium;
+	border-radius:0px;
+	cursor:pointer;
+	-webkit-transition:all ease .4s;
+	-moz-transition:all ease .4s;
+	-o-transition:all ease .4s;
+	-ms-transition:all ease .4s;
+	}
+
+#submit:hover{
+	background:#333;
+	color:#FFF;
+	border-radius:5px;
+	-webkit-transition:all ease .4s;
+	-moz-transition:all ease .4s;
+	-o-transition:all ease .4s;
+	-ms-transition:all ease .4s;
+	}
+
+#break{
+    width: 62%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 3px solid gold;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #fff3b2;
+}
+
+#contain{
+    width: 50%;
+}
+label{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	-webkit-transition:all ease .3s;
+	-moz-transition:all ease .3s;
+	-o-transition:all ease .3s;
+	-ms-transition:all ease .3s;
+	color:#333;
+}
+
+label:hover{
+	padding:5px;
+	-webkit-transition:all ease .2s;
+	-moz-transition:all ease .2s;
+	-o-transition:all ease .2s;
+	-ms-transition:all ease .2s;
+	}
+	
+input, textarea{
+	outline:none !important;
+	border:1px solid #CCC;
+	color:#666;
+	-webkit-transition: all ease .3s;
+	-moz-transition:all ease .3s;
+	-o-transition:all ease .3s;
+	-ms-transition:all ease .3s;
+	}
+	
+textarea{
+	width:80%;
+	height:auto;
+	min-height:50px;
+	}
+
+input:focus, textarea:focus{
+	outline:none !important;
+	border:2px solid #666;
+	color:#000;
+	-webkit-transition: all ease .3s;
+	-moz-transition:all ease .3s;
+	-o-transition:all ease .3s;
+	-ms-transition:all ease .3s;
+	}
+	
+h1{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-align:center;
+}
+
+#logo{
+    width:44%;
+    height:auto;
+    float:right;
+	display:compact;
+}
+
+logo:focus{
+	-webkit-animation:rotate(360deg);
+	}	
+
+#mobileLogo{
+	height:0px;
+	width:0px;
+    float:right;
+	}
+
+a{
+	color:#333;
+	}
+	
+#contactDec{
+	display:none;
+	-webkit-transition:all ease.2s;
+	-moz-transition:all ease.2s;
+	-o-transition:all ease.2s;
+	-ms-transition:all ease.2s;
+	}
+	
+@media only screen and (max-device-width: 720px) {
+body{
+	background:#FFF;
+	margin:0px;
+	padding:0px
+	}
+
+#submit{
+	font-size:20pt;
+	padding:5px;
+	background:#FFF; 
+	border:#999 medium;
+	border-radius:0px;
+	cursor:pointer;
+	-webkit-transition:all ease .4s;
+	-moz-transition:all ease .4s;
+	-o-transition:all ease .4s;
+	-ms-transition:all ease .4s;}
+
+#submit:hover{
+	background:#CCC;
+	border-radius:5px;
+	padding:6px;
+	-webkit-transition:all ease .4s;
+	-o-transition:all ease .4s;
+	-ms-transition:all ease .4s;
+	-moz-transition:all ease .4s;
+	}
+
+#break{
+    width: 98%;
+	margin:0px;
+	padding:0px;
+    border: 3px solid gold;
+    border-radius: 15px;
+    background-color: #fff3b2;
+}
+
+#contain{
+    width: 50%;
+}
+label{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	-webkit-transition:all ease .3s;
+	-o-transition:all ease .3s;
+	-ms-transition:all ease .3s;
+	-moz-transition:all ease .3s;
+	padding:2px;
+}
+
+label:hover{
+	padding:5px;
+	-webkit-transition:all ease .2s;
+	-moz-transition:all ease .2s;
+	-o-transition:all ease .2s;
+	-ms-transition:all ease .2s;
+	}
+	
+input, textarea{
+	outline:none !important;
+	border:1px solid #CCC;
+	color:#666;
+	-webkit-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	-ms-transition: all ease .3s;
+	}
+	
+textarea{
+	width:100%;
+	height:auto;
+	min-height:50px;
+	}
+
+input:focus, textarea:focus{
+	outline:none !important;
+	border:2px solid #666;
+	color:#000;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	-ms-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	}
+	
+h1{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-align:center;
+}
+
+h2{
+	font-size:18px;
+	}
+
+#logo{
+    width:0%;
+	display:none;
+    height:0%;
+    float:right;
+}	
+
+#mobileLogo{
+	display:compact;
+	height:auto;
+	width:44%;
+    float:right;
+	}
+	
+#mobileLogo:focus{
+	-webkit-animation:rotate(360deg);
+	}
+	
+#compleatedtext{
+	font-size:14px;
+	}	
+	
+}

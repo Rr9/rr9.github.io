@@ -1,0 +1,107 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="screen.css" type="text/css" media="Screen">
+    <!---<link rel="stylesheet" href="handheld.css" type="text/css" media="handheld">-->
+    <script src="jquery.js"></script>
+	<script src="jquery.cookie.js"></script>
+    <script src="jquery.autosize.js"></script>
+	<script>
+		$(document).ready(function() {
+			var complete = $.cookie('Vex2015Registration');
+			if(complete=="Compleated"){
+				window.location.href = "thankyou.html";
+				}
+			$('textarea').autosize();
+        });
+		
+		function appear() {
+  			var contentId = document.getElementById("contactDec");
+			contentId.style.display = "block"; }
+	</script>
+	
+</style>
+</head>
+<body>
+
+<div id="break" class="myform">
+
+<h1> Warrior Robotix Application</h1>
+
+<img src="frontlogo.png" alt="Logo" id="logo">
+<img src="Back.png" alt="Logo" id="mobileLogo">
+
+<form id="form1" action="mail2.php" method="POST">
+    <label class="name">Name</label><br>
+<input type="text" name="name" class="name" placeholder="First Last"><br>
+    
+    <label class="email">Email</label><br>
+<input type="text" class="email" name="email" placeholder="someone@example.com"><br>
+
+    <label class="phone">Phone</label><br>
+<input type="text" class="phone" name="phone" placeholder="1112223333"><br>
+
+    <label class="student">Student Number</label><br>
+<input type="text" class="student" name="student" placeholder="123456"><br>
+
+    <label class="grade">Grade</label>
+<select class="grade" name="grade" size="1">
+<option selected value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select><br>
+
+    <label class="competition">Competition</label>
+<select name="type" size="1" class="competition">
+<option selected value="Vex">Vex Robotics</option>
+<option value="Skills">Skills Robotics</option>
+<option value="Other">Other </option>
+</select><br><br>
+    <label class="q1">What in particular interests you and entices you to join robotics club?</label><br>
+<textarea name="q1" placeholder="Programming? Building? Designing? Everything counts"></textarea><br>
+
+<br><label class="q2">How dedicated do you think you'll be to robotics club?</label><br>
+<textarea name="q2" placeholder="Can't leave your team hanging..."></textarea><br>
+
+<br><label class="q3">What is your greatest asset, as a potential member of the club?</label><br>
+<textarea name="q3" placeholder="I am very stong at..."></textarea><br>
+
+<br><label class="q4">What do you believe is the foundation for a successful robot?</label><br>
+<textarea name="q4" placeholder="Not the wheels."></textarea><br>
+
+<br><label class="q5">How eager are you to learn about robotics?</label><br>
+<textarea name="q5" placeholder="Atleast somewhat eager, rigth?"></textarea><br>
+
+<br><label class="q6">What type of previous experience, if any, might you have in relation to robotics?</label><br>
+<textarea name="q6" placeholder="Everyhting counts, including nothing..."></textarea><br>
+
+<br><label class="q7">What was last year's competition? What were the scoring objects?</label><br>
+<textarea name="q7" placeholder="Google it, takes a few seconds"></textarea><br>
+
+<br><label class="q8">How are vex products categorized? (hint, it's on the vex <a href="http://www.vexrobotics.com/vex" target="_blank">Homepage</a>)</label><br>
+<textarea name="q8" placeholder="They are catagorised by..."></textarea><br>
+
+<br><label class="q9">List the contact information (phone number or email) of a company that could potentially sponsor Warrior Robotix.</label><br>
+<textarea name="q9" placeholder="Its fine if you don't know any :)"></textarea><br>
+<br>
+<br>
+<label>$15 basic fee for all members + cost of parts TBD in groups </label>
+<br>
+<br>
+<label>By clicking submit you are agreeing to get e-mail updates from the Robotics Club. <a onClick="appear()" style="text-decoration:underline; cursor:pointer; ">Why?</a>
+<br> No spam, We promise 
+
+<span id="contactDec">
+<br>The emails will be sent to keep you updated with club events and dates as well as just in case we need to contact you.<br>
+You have to agree to receive these emails under the new <a href="http://fightspam.gc.ca/eic/site/030.nsf/eng/home">Canadian anti-spam law</a> came into effect on July 1, 2014 
+</span>
+</label>
+
+<div id="but"><button type="submit" value="Send" style="margin-top:15px;" name="submit" id="submit">Submit</button></div>
+
+</form>
+
+</div>
+
+</body>
+</html>
