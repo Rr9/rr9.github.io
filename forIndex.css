@@ -68,6 +68,7 @@ header{
 	padding-right: 11px;
 	transition: top 1s ease, background 1.2s;
 	cursor: pointer;
+	width: 100%;
 }
 
 .project:hover .figCaption{
