@@ -1,0 +1,44 @@
+main{
+	color: #333;
+	width: 80%;
+    border: 1px solid #eee;
+	margin: auto;
+
+	text-align: center;
+}
+
+h1{
+	font-size:4.5em;
+	font-family: h1Font; 
+}
+
+h2{
+	font-size:3.5em;
+	font-family: h2Font; 
+}
+
+h3{
+	font-size:3em;
+	font-family: h3Font; 
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+
+
+@font-face{
+	font-family: h1Font;
+	src: url('fonts/RobotoSlab-Bold.ttf');
+}
+@font-face{
+	font-family: h2Font;
+	src: url('fonts/Montserrat-Medium.ttf');
+}
+@font-face{
+	font-family: h3Font;
+	src: url('fonts/Montserrat-Light.ttf');
+}
+
