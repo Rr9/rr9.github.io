@@ -3,8 +3,9 @@
 	<head>
 		<title>Riju Sikdar</title>
 		<link rel="stylesheet" type="text/css" href="index.css"/>
-		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="jqueryui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
 		<main>
@@ -12,10 +13,13 @@
 			<hr>
 			
 			<h2><a href="resume/resume.pdf">Resume</a></h2>
-			<h2>Projects</h2>
-			<h3>Hardware</h3>
-			<h3>Software</h3>
-			<h3>Ideas</h3>
+			<h2 id="projects" onclick="projects()">Projects</h2>
+			<div id="subProjects">
+				<h3><a href="http://github.com/rr9">Github</a></h3>
+				<h3>Hardware</h3>
+				<h3>Software</h3>
+				<h3>Ideas</h3>
+			</div>
 		</main>
 
 	</body>
