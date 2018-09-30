@@ -1,13 +1,12 @@
-h1, h2, hr{
+h1, h2, hr, #dark{
+	transition: ease 200ms all; 
 	display: none;
 }
 
 main{
 	width: 80%;
 	min-width: 600px;
-    /*border: 1px solid #eee;*/
 	margin: auto;
-
 	text-align: center;
 }
 
@@ -28,6 +27,7 @@ h2{
 h3{
 	font-size:2.6em;
 	font-family: h3Font; 
+	transition: ease 200ms all; 
 }
 
 #subProjects{
@@ -35,12 +35,10 @@ h3{
 }
 
 a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+  text-decoration: inherit; 
 }
 
 #dark{
-	float: right;
 	position: absolute;
 	top: 7%;
 	right: 15%;

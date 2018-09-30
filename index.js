@@ -2,17 +2,15 @@ var darkStatus = 0;
 
 $(document).ready(function(){
 	//alert( $.cookie("darkTheme") );
-	$.cookie("darkTheme", "on");
 
 	var dark = $.cookie("darkTheme");
+	
 	if(dark == ""){
 		writeDarkCookie(0);
 	}else if(dark == "on"){
 		darkOn();
 		darkStatus = 1;
 	}
-
-	console.log(dark);
 
 	$("h1").fadeIn("slow", function(){})
 
@@ -26,31 +24,32 @@ $(document).ready(function(){
 });
 
 function projects(){
-	console.log("hre");
     $("#projects").hide();
     $("#subProjects").fadeIn( 400, function(){} );
 }
 
+
+
+function darkToggle(){
+	if(darkStatus==1){
+		darkOff();
+	}else{
+		darkOn();
+	}
+}
+
 function darkOn(){
-
-	$("body").css("background-color", "#1e1e1e");
-	$("h1").css("color", "#eeeeee");
-	$("h2").css("color", "#eeeeee");
-	$("h3").css("color", "#eeeeee");
-	$("hr").css("color", "#eeeeee");
-
+	$("#dark").text("Light");
+	$("head link#theme").attr("href", "indexDark.css");
 	writeDarkCookie(0);
+	darkStatus=1;
 }
 
 function darkOff(){
-
-	$("main").css("background-color", "#eee");
-	$("h1").css("color", "#010101");
-	$("h2").css("color", "#010101");
-	$("h3").css("color", "#010101");
-	$("hr").css("color", "#010101");
-
+	$("#dark").text("Dark");
+	$("head link#theme").attr("href", "indexLight.css");
 	writeDarkCookie(1);
+	darkStatus=0;
 }
 
 function writeDarkCookie(on) {
@@ -59,21 +58,4 @@ function writeDarkCookie(on) {
 	}else{
 		$.cookie("darkTheme", "off");
 	}
-}
-
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
 }
