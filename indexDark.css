@@ -1,0 +1,24 @@
+body{
+	background-color:#1e1e1e;
+}
+
+main{
+}
+
+h1{
+	color: #FFF
+}
+
+h2,h3,hr{
+	color: #ccc;
+}
+
+h2:hover{
+	color: #FFF;
+}
+
+#dark{
+
+	color: #aaaaaa;
+}
+
