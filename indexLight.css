@@ -20,6 +20,8 @@ h3:hover{
 
 #dark{
 
-	color: #202020;
+	background-color: #202020;
 }
-
+#dark:hover{
+	border: solid 4px #202020;
+}

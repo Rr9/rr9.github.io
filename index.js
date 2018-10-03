@@ -39,14 +39,14 @@ function darkToggle(){
 }
 
 function darkOn(){
-	$("#dark").text("Light");
+	//$("#dark").text("Light");
 	$("head link#theme").attr("href", "indexDark.css");
 	writeDarkCookie(1);
 	darkStatus=1;
 }
 
 function darkOff(){
-	$("#dark").text("Dark");
+	//$("#dark").text("Dark");
 	$("head link#theme").attr("href", "indexLight.css");
 	writeDarkCookie(0);
 	darkStatus=0;

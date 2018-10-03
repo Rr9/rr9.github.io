@@ -22,6 +22,8 @@ h3:hover{
 }
 
 #dark{
-
-	color: #aaaaaa;
+	background-color: #aaaaaa;
+}
+#dark:hover{
+	border: solid 4px #aaaaaa;
 }

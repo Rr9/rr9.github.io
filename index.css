@@ -1,5 +1,5 @@
 h1, h2, hr, #dark{
-	transition: ease 200ms all; 
+	transition: ease 200ms all;
 	display: none;
 }
 
@@ -12,22 +12,21 @@ main{
 
 h1{
 	font-size:4.5em;
-	font-family: h1Font; 
+	font-family: h1Font;
 }
 
 h2{
 	font-size:3.5em;
-	font-family: h2Font; 
-	padding-top:7%;  
-	padding-bottom:5%; 
+	font-family: h2Font;
+	padding-top:7%;
+	padding-bottom:5%;
 	cursor: pointer;
 }
-
-
+=
 h3{
 	font-size:2.6em;
-	font-family: h3Font; 
-	transition: ease 200ms all; 
+	font-family: h3Font;
+	transition: ease 200ms all;
 }
 
 #subProjects{
@@ -35,7 +34,7 @@ h3{
 }
 
 a {
-  text-decoration: inherit; 
+  text-decoration: inherit;
 }
 
 #dark{
@@ -43,8 +42,15 @@ a {
 	top: 7%;
 	right: 15%;
 	cursor: pointer;
+	height: .5em;
+	width: .5em;
+	border-radius: 100%;
+	margin: 4px;
+	border: solid 0px black;
 }
-
+#dark:hover{
+	margin: 0px;
+}
 
 
 @font-face{
@@ -59,4 +65,3 @@ a {
 	font-family: h3Font;
 	src: url('fonts/Montserrat-Light.ttf');
 }
-
