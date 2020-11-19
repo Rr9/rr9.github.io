@@ -1,4 +1,4 @@
-var darkStatus = 0;
+var darkStatus = 1;
 
 $(document).ready(function(){
 	//alert( $.cookie("darkTheme") );
@@ -28,6 +28,27 @@ function projects(){
     $("#subProjects").fadeIn( 400, function(){} );
 }
 
+function fadenext(element){
+	$(element).next().fadeIn( 400, function(){} );
+	// if($(element).next().style.display === "none"){
+	// 	console.log("showing");
+	// 	$(element).next().fadeIn( 400, function(){} );
+	// 	// $(element).children().style.display = "initial";
+	// }else if($(element).next().style.display != "none"){
+	// 	$(element).next().fadeOut( 400, function(){} );
+	// }
+}
+
+function fadechildren(element){
+	// $(element).hide();
+	if($(element).children().style.display == "none"){
+		console.log("showing");
+		$(element).children().fadeIn( 400, function(){} );
+		// $(element).children().style.display = "initial";
+	}else if($(element).children().style.display != "none"){
+		$(element).children().fadeOut( 400, function(){} );
+	}
+}
 
 
 function darkToggle(){

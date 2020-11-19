@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Riju Sikdar</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" id="theme" type="text/css" href="indexDark.css"/>
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+		<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1 onclick="location.reload(false)" style="position:relative; left:-7%"><a href="index.html">&larr;</a> &nbsp;&nbsp;&nbsp;&nbsp; Projects</h1>
+            <div id="dark" onclick="darkToggle()"></div>
+            <hr>
+
+			<!-- <h2 id="" onclick="fadenext(this)">Projects</h2> -->
+			<div id="left">
+                <h2 id="lessspacer" id="projects" onclick="fadenext(this)">Hardware</h3>
+                    <span id="subProjects">
+                        <h4><a href="https://github.com/Rr9/pomaduino">Pomaduino &nearr;</a></h4>
+                        <p>- Pomadoro timer using Arduino Nano & a 2x7 segment display<br>
+                        - Rotary encoder with button used for user input</p>
+
+                        <h4><a href="https://github.com/Rr9/openSaysMe2">OpenSaysMe2 &nearr;</a></h4>
+                        <p>- Wi-Fi based IOT garage door opener retrofit<br>
+                            - ESP8266 microcontroller and a rotary encoder to check door position<br>
+                            - Rest API web server accessable within house WiFi (not port forwarded)</p>
+
+                        <h4><a href="https://github.com/Rr9/floodESPy">FloodESPy &nearr;</a></h4>
+                        <p>- Wi-Fi basement flooding detector<br>
+                            - ESP8266 and a water level sensor, with power &amp; signal tied to seperate GPIOs<br>
+                            - IFTTT for notifications (or that was the idea)</p>
+
+                        <h4><a href="https://github.com/Rr9/arrowKeyRC">ArrowKeyRC &nearr;</a></h4>
+                        <p>- Arduino Nano &amp; nRF25L04 based remote contol car<br>
+                            - Rigged rc car with receiving nano and motorcontroller ICs to dive 2 motors<br>
+                            - Arrow key commands in command line transfered over PySerial to Arduino connected to computer<br>
+                            - Key presses transmitted as movement commands to car</p>
+
+                        <h4><a href="https://www.thingiverse.com/rr9/designs">3D Model Designs &nearr;</a></h4>
+                        <p>- Few things I have made to 3D print, mostly functional things to solve problems</p>
+    
+                    </span>
+                    
+				<h2 id="lessspacer" id="projects"  onclick="fadenext(this)">Software</h3>
+                    <span id="subProjects">
+                        <h4><a href="https://github.com/Rr9/outbreakAffect">OutbreakAffect &nearr;</a></h4>
+                        <p>- Cellular automaton simulating a disease spread within population<br>
+                            - Features: Social distancing, quarentineing mode or hospital only mode, infectivity periods<br>
+                            - This was made just as lockdowns started so obiously it was Covid inspired<br>
+                            - Tried to match simulation growth curves best US Covid case data (John Hopkins)<br>
+                            -- To then see what happens in quarentine mode case</p>
+
+                        <h4><a href="https://github.com/SasilaH/Routini">Routini &nearr;</a></h4>
+                        <p>- Calender app with GoLang backend that predicts best time to complete tasks<br>
+                            - Front end should be React (when we get to it)<br>
+                            - It's a project in progress and... oh right, also MongoDB</p>
+
+                        <h4><a href="https://github.com/Rr9/CrowsNest">Crows Nest &nearr;</a></h4>
+                        <p>- Python OpenCV motion detection algorithm<br>
+                            - Takes 10 seconds of frames from before motion is detected<br>
+                            - Recording frame-rate increased after motion detection<br>
+                            - Timestamp added to recorded footage</p>
+
+                        <h4><a href="https://github.com/Rr9/barPath">BarPath &nearr;</a></h4>
+                        <p>- Traces the path of a olympic barbell in a video of me lifting to see if I am distroying my back<br>
+                            - Uses OpenCV to take a picture of the side of the barbell and locate it in each frame </p>
+
+                        <h4><a href="https://github.com/Rr9/frameAnaliser">FloodESPy &nearr;</a></h4>
+                            <p>- Hey look, another OpenCV project!<br>
+                                - This one takes each frame from a movie, averages brightness values, outputs to file<br>
+                                - Literally made to see an anime had decreasing values of brigtness </p>
+
+                        <h4><a href="https://github.com/Rr9/SwiperNoSwiping">Swiper No Swiping &nearr;</a></h4>
+                        <p>- Ya.. This was a hackathon project<br>
+                            - Uses a Leap Motion for gesture input [volume up/down, play, stop, next/prev track<br>
+                            - Oh right the main arraction, it swipes on tinder.com :D</p>
+
+                    </span>
+
+				<h2 id="lessspacer" id="projects"  onclick="fadenext(this)">Ideas</h3>
+                    <span id="subProjects">
+                        <h4>BLE macro pad with customisable knob</h4>
+                        <p>- Either use a rotary encoder for volume, skip fwd/back &amp; change playback speed on youtube<br>
+                           - Or capacitive pads to recreate IPod classic scroll wheel on </p>
+
+                        <h4>VR Driving school?</h4>
+                        <p>- I mean, I am sure it exitsts but like put a package together :shrug:</p>
+                    </span>
+			</div>
+		</main>
+
+	</body>
+</html>
